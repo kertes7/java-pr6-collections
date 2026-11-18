@@ -1,0 +1,11 @@
+Два різні об'єкти з однаковим id=7 додано до HashSet; contains для третього об'єкта з id=7:
+1) без equals і hashCode:          size = 2, contains(третій) = false
+2) лише equals:                    size = 2, contains(третій) = false
+3) equals + hashCode:              size = 1, contains(третій) = true
+
+Зміна поля-ключа в об'єкта, що вже лежить у HashSet (клас із equals+hashCode):
+до зміни:  set.contains(t) = true, size = 1
+після t.setId(999):
+  set.contains(t)                  = false
+  set.contains(new TitleFull(7))   = false
+  size = 1; об'єкт у множині: Title{id=999, Матриця, 1999}

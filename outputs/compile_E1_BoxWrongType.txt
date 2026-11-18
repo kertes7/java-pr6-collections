@@ -1,0 +1,5 @@
+errors\E1_BoxWrongType.java:15: error: incompatible types: String cannot be converted to Title
+        box.put("abc");                 // рядок замість Title
+                ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error

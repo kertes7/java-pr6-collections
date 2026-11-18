@@ -1,0 +1,9 @@
+Box<Title>: Title{id=1, Матриця, 1999}
+printAll(List<Title>):
+  Title{id=2, Шрек, 2001}
+  Title{id=3, Аватар, 2009}
+ObjectBox: помилка проявилась ЛИШЕ під час виконання:
+java.lang.ClassCastException: class java.lang.String cannot be cast to class ua.duikt.pr6.Title (java.lang.String is in module java.base of loader 'bootstrap'; ua.duikt.pr6.Title is in unnamed module of loader 'app')
+	at ua.duikt.pr6.Exp1Generics.main(Exp1Generics.java:42)
+total(List<Integer>) = 6.0
+total(List<Double>)  = 4.0

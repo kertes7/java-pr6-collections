@@ -1,0 +1,15 @@
+Заповнення колекцій 100000 об'єктами TitleFull; 1000 операцій; 5 запусків
+Вставка x1000 у середину ArrayList    : 16 6 13 7 9 | середнє 10,2 мс
+Вставка x1000 у середину LinkedList   : 343 186 380 293 441 | середнє 328,6 мс
+contains x1000: ArrayList             : 510 482 944 658 667 | середнє 652,2 мс
+contains x1000: LinkedList            : 1200 1900 1311 1681 1211 | середнє 1460,6 мс
+contains x1000: HashSet               : 0 0 0 0 0 | середнє 0,0 мс
+
+Видалення тайтлів до 2000 року прямо в for-each:
+java.util.ConcurrentModificationException
+	at java.base/java.util.ArrayList$Itr.checkForComodification(ArrayList.java:1095)
+	at java.base/java.util.ArrayList$Itr.next(ArrayList.java:1049)
+	at ua.duikt.pr6.Exp2Collections.main(Exp2Collections.java:71)
+Список після невдалого видалення: 4 елементів
+Те саме видалення через Iterator:
+Залишилось: [Title{id=3, Шрек, 2001}, Title{id=4, Аватар, 2009}, Title{id=5, Коко, 2017}]

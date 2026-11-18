@@ -1,0 +1,5 @@
+errors\E2_ListNumber.java:13: error: incompatible types: List<Integer> cannot be converted to List<Number>
+        total(ints);                    // List<Integer> не є List<Number>
+              ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error
